@@ -1,0 +1,16 @@
+.main-container {
+  border: 1px solid #000;
+  display: flex;
+  flex-flow: row wrap;
+  /*flex-flow: row nowrap;*/
+  /*justify-content: space-evenly;*/
+  /*justify-content: space-between;*/
+  justify-content: space-around;
+  /*align-items: flex-start;*/
+  align-items: center;
+  align-content: flex-end;
+}
+
+.item {
+  border: 1px solid red;
+}

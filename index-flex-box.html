@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navegation bar</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style-flex-box-index.css">
+  <style type="text/css">
+	.imgs-container {
+	  /*FLEX*/
+	  display: flex;
+	  flex-flow: row wrap;
+	  justify-content: space-evenly;
+	  /*justify-content: flex-start;*/
+	}
+
+	 .description {
+		padding-top: 15px;
+	  padding-bottom: 30px;
+	  text-align: center;
+	  border: 1px solid #e1e1e1;
+	  margin: 1px;
+	  /*FLEX*/
+	  /*flex: 1;*/
+	 
+	  display: flex;
+	  flex-flow: column wrap;
+
+	}
+
+	.imgs img {
+	  padding: 5px;
+	  width: 150px;
+	  height: 100px;
+	}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+  	  <span>LOGO</span>
+  	</div>
+  	<nav>
+  	  <a href="#">Section 1</a>
+  	  <a href="#">Section 2</a>
+  	  <a href="#">Section 3</a>
+  	  <a href="#">Section 4</a>
+  	</nav>
+  </header>
+  <div class="container">
+  	<section class="section-main">
+  	  <article>
+  	  	  <h1>Description</h1><br>
+  	  	  <p>Lorem ipsum is simply dummy of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknow printer took a galley of type and scrambled it to make a type specimen book. It has survived not onlu five countries, but also the leap into electronic typesetting, reaming essentially unchanged...</p>
+  	  </article>
+  	  <div class="img-description">
+  	  	<img src="./images/cat-1.jpg">
+  	  	<i>Cat Minino</i>
+  	  </div>
+  	</section>
+  	<!-- <div class="section-main-content"> -->
+  	  <section class="main-content">
+  	  	<article>
+	  	  <h1>Main content</h1><br>
+	  	  <p>What is Lorem ipsum? Lorem is simply dumpy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typessiting, reaming essentially unchanged. It was popularised in 1960 with the release of letraset sheets containing Lorm ipsum passages, and recently with desktop publishing software like aldus PageMarker including versions of Lorem Ipsum
+	  	  	<br><br>
+	  	  Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when ooking at its layout. The point of using lorem ipsum is that it has a more-less normal distribution of letteres as oposed to using 'Conent here, contente here', making it look like readable English. Many desktop pusblishid packages and wbe page editors now use lorem ipsum as their defaut model text, and searh for 'lorem ipsum' will uncover many web sities still in their infancy. Varius versions have evolved oer the years, sometimes by accident, sometimes on purpose (injected homour and the like). <br><br> Where does it come from? Contrary to popular belief, Lorem ipsum is not simply random text, it has roots in a pice of classical Latin literature from 45 BC, makinf it over 200 years old. Richard McClintock , a Latin professor at Hampden-Sydney college in Virginia, looked up one oonce of the more obscure Latin words, consectetur, from a Lorem ipusm passage, and going throught the cities of the word in classical literature, discovered undoutable source. Lorem ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written 45 BC. This book is treatise on the theory of ethic, very popular durin the Renaissance. The first line of ipsum, "Lorem ipsum dolor sit amet...", comes from a line section 1.10.32
+	  	</p>
+	  	</article> 
+	  	<div class="imgs">
+  	  	  <h2>Related Posts</h2>
+  	  	  <div class="imgs-container">
+  	        <div class="description"><img src="./images/cat-2.jpg">Cat 1</div>
+  	        <div class="description"><img src="./images/cat-2.jpg">Cat 1</div>
+  	        <div class="description"><img src="./images/cat-2.jpg">Cat 1</div>
+  	        <div class="description"><img src="./images/cat-2.jpg">Cat 1</div>
+  	        <div class="description"><img src="./images/cat-2.jpg">Cat 1</div>
+	  	  </div>
+  	    </div>
+  	  </section>
+  </div>
+  <footer>
+  	  Copyright 2020
+  	</footer>
+</body>
+</html>
