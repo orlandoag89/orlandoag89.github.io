@@ -1,3 +1,4 @@
+
 a:link {
   text-decoration: none;
   color: #fff;
@@ -23,19 +24,14 @@ header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
 }
 
 header nav {
   width: 25%;
-
-  /*FLEX*/
-  display: flex;
 }
 
 header nav a {
-  /*FLEX*/
-  flex-grow: 1;
+  padding: 10px;
 }
 .container {
   width: 90%;
@@ -76,6 +72,10 @@ header nav a {
 
 .col-30 {
   width: 30%;
+  flex: 1 0 25%;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .col-50 {
@@ -86,6 +86,7 @@ header nav a {
 
 .col-95 {
   width: 95%;
+  flex: 1 0 70%;
 }
 
 .col-100 {
@@ -109,22 +110,11 @@ article {
 .col-30 > h2 {
   padding: 10px;
 }
+
 .images {
   /*FLEX*/
   display: flex;
-  flex-flow: row wrap;
-}
-
-.description {
-  padding-top: 20px;
-  padding-bottom: 30px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 2px;
-  border: 1px solid #e1e1e1;
-  width: 200px;
-  text-align: center;
-  color: blue;
+  flex-wrap: wrap;
 }
 
 .hover-class {
@@ -137,6 +127,44 @@ footer {
   color: #fff;
   padding: 10px;
   bottom: 0px;
-  position: absolute;
   width: 99%;
+}
+
+.row-2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article-class {
+  flex: 1 0 70%;
+}
+
+.aside-class {
+  flex: 1 0 25%;
+}
+
+.figure-class {
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #e1e1e1;
+  margin: 1px;
+}
+
+.img-css {
+  width: 100%;
+}
+
+.clase-h2 {
+  flex: 1 0 100%;
+}
+
+.images-divs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.figcaption-class {
+  text-align: center;
+  color: grey;
+  font-style: italic;
 }
