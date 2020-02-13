@@ -24,15 +24,25 @@ header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 header nav {
   width: 25%;
+
+  /*FLEX*/
+  display: flex;
 }
 
 header nav a {
-  padding: 10px;
+  /*FLEX*/
+  flex-grow: 1;
 }
+article {
+  text-align: justify;
+  padding: 20px 10px;
+}
+
 .container {
   width: 90%;
   margin: auto;
@@ -40,85 +50,6 @@ header nav a {
   /*FLEX*/
   display: flex;
   flex-flow: column wrap;
-}
-
-.row {
-  border: 1px solid #e1e1e1;
-  /*FLEX*/
-  display: flex;
-  
-}
-
-.center-row {
-  padding-left: 10px;
-  /*FLEX*/
-  display: flex;
-  align-items: center;
-}
-
-.border-right {
-  border-right: 1px solid #e1e1e1;
-}
-
-.col-center {
-  text-align: center;
-  color: blue;
-  
-  /*FLEX*/
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-}
-
-.col-30 {
-  width: 30%;
-  flex: 1 0 25%;
-
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.col-50 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 50%;
-}
-
-.col-95 {
-  width: 95%;
-  flex: 1 0 70%;
-}
-
-.col-100 {
-  width: 100%;
-}
-
-.border-in-right {
-  border-right: 1px solid #e1e1e1;
-}
-
-.col-center > img {
-  width: 850px;
-  height: 200px;
-}
-
-article {
-  text-align: justify;
-  padding: 20px 10px;
-}
-
-.col-30 > h2 {
-  padding: 10px;
-}
-
-.images {
-  /*FLEX*/
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.hover-class {
-  background: rgba(0,0,0,.25);
 }
 
 footer {
@@ -131,15 +62,28 @@ footer {
 }
 
 .row-2 {
+  border: 1px solid #e1e1e1;
+
+  /*FLEX*/
   display: flex;
   flex-wrap: wrap;
 }
 
+.col-50 {
+  flex: 1 0 25%;
+}
+
 .article-class {
   flex: 1 0 70%;
+  padding-top: 30px;
 }
 
 .aside-class {
+  height: 300%;
+  padding-top: 30px;
+  border-left: 1px solid #e1e1e1;
+
+  /*FLEX*/
   flex: 1 0 25%;
 }
 
@@ -159,6 +103,8 @@ footer {
 }
 
 .images-divs {
+
+  /*FLEX*/
   display: flex;
   flex-wrap: wrap;
 }
@@ -167,4 +113,25 @@ footer {
   text-align: center;
   color: grey;
   font-style: italic;
+}
+
+.section-main {
+  border: 1px solid #e1e1e1;
+  padding: 30px 10px;
+
+  /*FLEX*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.only-figure {
+  width: 100%;
+  height: 10%;
+}
+
+.only-image {
+  width: 100%;
+  height: 10%;
+  flex: 1 0 25%;
 }
